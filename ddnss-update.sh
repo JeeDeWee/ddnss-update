@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ash
 
 KEYAUTH=$DDNSS_KEYAUTH
 HOSTNAME=$DDNSS_HOSTNAME
