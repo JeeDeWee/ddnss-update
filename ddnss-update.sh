@@ -8,7 +8,7 @@ ALLHOST="all"
 DATE=`date +%Y-%m-%d\ %H:%M:%S`
 IP=`wget -q -O - https://www.ddnss.de/meineip.php| grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'`
 UPDIP=`cat $CONFIG/updip.txt`
-echo "Current IP=$UPDIP"
+echo "$DATE - Current IP=$UPDIP"
 
 if [ "$IP" == "$UPDIP" ]; then
     echo "$DATE - IP is unchanged - NO UPDATE"
